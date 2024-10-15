@@ -1,0 +1,32 @@
+﻿<Window x:Class="ContractMonthlyClaimSystem.SubmitClaimWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Submit Claim" Height="350" Width="525">
+    <Grid>
+        <!-- Lecturer Name -->
+        <Label Content="Lecturer Name:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtLecturerName" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <!-- Hours Worked -->
+        <Label Content="Hours Worked:" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtHoursWorked" HorizontalAlignment="Left" Margin="110,50,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <!-- Hourly Rate -->
+        <Label Content="Hourly Rate:" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtHourlyRate" HorizontalAlignment="Left" Margin="110,90,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <!-- Additional Notes -->
+        <Label Content="Additional Notes:" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAdditionalNotes" HorizontalAlignment="Left" Margin="110,130,0,0" VerticalAlignment="Top" Width="200" Height="60"/>
+
+        <!-- Upload File -->
+        <Button Content="Upload File" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Click="Upload_Click"/>
+        <Label x:Name="lblUploadedFile" Content="No file uploaded" HorizontalAlignment="Left" Margin="110,200,0,0" VerticalAlignment="Top"/>
+
+        <!-- Cancel Upload -->
+        <Button Content="Cancel Upload" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Click="CancelUpload_Click"/>
+
+        <!-- Submit Button -->
+        <Button Content="Submit Claim" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top" Click="Submit_Click"/>
+    </Grid>
+</Window>
